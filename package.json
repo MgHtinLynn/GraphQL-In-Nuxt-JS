@@ -1,0 +1,23 @@
+{
+  "name": "laravel-in-graphql-web-app",
+  "version": "1.0.0",
+  "description": "My stupendous Nuxt.js project",
+  "author": "hitnlynn",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc5",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "graphql-tag": "^2.10.1",
+    "nuxt": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

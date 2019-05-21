@@ -1,0 +1,38 @@
+{
+
+  "README_schema" : "Specifies how to load the GraphQL schema that completion, error highlighting, and documentation is based on in the IDE",
+  "schema": {
+
+    "README_file" : "Remove 'file' to use request url below. A relative or absolute path to the JSON from a schema introspection query, e.g. '{ data: ... }' or a .graphql/.graphqls file describing the schema using GraphQL Schema Language. Changes to the file are watched.",
+
+    "README_request" : "To request the schema from a url instead, remove the 'file' JSON property above (and optionally delete the default graphql.schema.json file).",
+    "request": {
+      "url" : "http://graphqlLaravel.local/graphql",
+      "method" : "POST",
+      "README_postIntrospectionQuery" : "Whether to POST an introspectionQuery to the url. If the url always returns the schema JSON, set to false and consider using GET",
+      "postIntrospectionQuery" : true,
+      "README_options" : "See the 'Options' section at https://github.com/then/then-request",
+      "options" : {
+        "headers": {
+          "user-agent" : "JS GraphQL",
+          "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYmV0dGVyLmxvY2FsL2dyYXBocWwvYXV0aCIsImlhdCI6MTU0Mjk0NDE4NCwiZXhwIjoxNTQ4MTI4MTg0LCJuYmYiOjE1NDI5NDQxODQsImp0aSI6InRsd3dVZUdtcm9EaE5sU0EiLCJzdWIiOiIyZjNhODM0MC00NmY4LTExZTgtYjNjMi04OTZhYTk1MjY2MzgiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.kXH0dxmN7pLrdoI_F8HqhAHGY4TA_F0R7AP5hqc3TBc"
+        }
+      }
+    }
+
+  },
+
+  "README_endpoints": "A list of GraphQL endpoints that can be queried from '.graphql' files in the IDE",
+  "endpoints" : [
+    {
+      "name": "Default (http://graphqlLaravel.local/graphql)",
+      "url": "http://graphqlLaravel.local/graphql",
+      "options" : {
+        "headers": {
+          "user-agent" : "JS GraphQL"
+        }
+      }
+    }
+  ]
+
+}
